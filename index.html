@@ -1,18 +1,74 @@
+<!DOCTYPE html>
 <html>
-<body bgcolor="lightblue"
- <form method="get" action="mhd27.html">
- <center>
- <table border=2>
-	<tr>
-	<td>User ID:</td>
-	<td><input type="text" name="id"></td>
-	</tr>
-	<tr>
-	<br>
-	<td>Password:</td>
-	<td><input type="password" name="password"></td>
-	</tr>
-	<tr>
-	<td colspan=2 align="center"><input type="submit" name="submit">
-	<input type="reset" name="Cancel"></td>
+<head>
+    <title>Hardik's Animated Website</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #a2c7e5, #f0f8ff);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            animation: fadeIn 2s ease-in;
+        }
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        h1 {
+            color: #333366;
+        }
+        p {
+            font-size: 18px;
+        }
+        img {
+	    src="1.jpg"
+            width: 150px;
+            border-radius: 50%;
+            margin: 10px;
+        }
+        a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333366;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        form {
+            margin-top: 30px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            padding: 8px;
+            margin: 5px;
+            width: 250px;
+            border-radius: 5px;
+            border: 1px solid #999;
+        }
+        input[type="submit"] {
+            padding: 8px 20px;
+            background-color: #333366;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hello, I'm Hardik!</h1>
+    <img src="https://via.placeholder.com/150" alt="My Photo">
+    <p>Welcome to my animated website. I am learning HTML, CSS, and publishing my projects online.</p>
+
+    <a class="button" href="https://github.com/">Visit My GitHub</a>
+
+    <form>
+        <h3>Contact Me</h3>
+        <input type="text" placeholder="Your Name" required><br>
+        <input type="email" placeholder="Your Email" required><br>
+        <textarea placeholder="Your Message" rows="4" required></textarea><br>
+        <input type="submit" value="Send">
+    </form>
+
+</body>
 </html>
